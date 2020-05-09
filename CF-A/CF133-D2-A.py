@@ -1,3 +1,6 @@
+# https://codeforces.com/contest/133/problem/A
+
+
 def single_integer():
     return int(input())
 
@@ -14,13 +17,12 @@ def multi_string():
     return input().split()
 
 
-k = single_integer()
-for i in range(k):
-    n, m = multi_integer()
-    if max(n, m) >= 3:
-        if min(n, m) >= 2:
-            print("NO")
-        else:
-            print("YES")
-    else:
+program = set('HQ9')
+
+s = string()
+for i in s:
+    if i in program:
         print("YES")
+        break
+else:
+    print("NO")

@@ -14,3 +14,23 @@ def string():
 
 def multi_string():
     return input().split()
+
+
+n, x = multi_integer()
+
+total_sum = sum(multi_integer())
+
+if total_sum == 0:
+    print(0)
+elif total_sum > 0:
+    ans = 0
+    while total_sum > 0:
+        total_sum -= x
+        ans += 1
+    print(ans)
+else:
+    ans = 0
+    while total_sum < 0:
+        total_sum += x
+        ans += 1
+    print(ans)
