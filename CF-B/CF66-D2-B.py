@@ -45,5 +45,4 @@ for i in range(n):
             break
     if temp > max_len:
         max_len = temp
-
 print(max_len)

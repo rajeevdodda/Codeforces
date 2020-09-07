@@ -1,4 +1,4 @@
-#
+# https://codeforces.com/contest/451/problem/B
 
 
 def single_integer():
@@ -15,3 +15,9 @@ def string():
 
 def multi_string():
     return input().split()
+
+
+n = single_integer()
+numbers = list(multi_integer())
+new_list = list()
+count = 0

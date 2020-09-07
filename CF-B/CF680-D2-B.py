@@ -1,4 +1,4 @@
-#
+# https://codeforces.com/contest/680/problem/B
 
 
 def single_integer():

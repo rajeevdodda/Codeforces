@@ -1,4 +1,4 @@
-#
+# https://codeforces.com/contest/688/problem/B
 
 
 def single_integer():
@@ -15,3 +15,8 @@ def string():
 
 def multi_string():
     return input().split()
+
+
+s = string()
+
+print(s + s[::-1])
