@@ -6,13 +6,9 @@ kth_place_score = places[k - 1]
 
 ans = 0
 for i in places:
-    if i == 0:
-        break
+
+    if i > 0 and i >= kth_place_score:
+        ans += 1
     else:
-        if i >= kth_place_score:
-            ans += 1
-        else:
-            break
-
+        break
 print(ans)
-
