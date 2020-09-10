@@ -1,2 +1,11 @@
 # Project exclude paths
 /venv/
+.DS_Store
+.gitignore
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/Codeforces.iml
