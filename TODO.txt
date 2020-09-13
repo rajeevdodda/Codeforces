@@ -1,2 +1,5 @@
 https://codeforces.com/contest/66/problem/B  => Can also be solved in O(N)
 
+Inclusion Exclusion priciple
+
+
