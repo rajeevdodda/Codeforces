@@ -1,0 +1,9 @@
+# https://codeforces.com/problemset/problem/1304/A
+
+
+for _ in range(int(input())):
+    x, y, a, b = map(int, input().split())
+    if (y - x) % (a + b) == 0:
+        print((y - x) // (a + b))
+    else:
+        print(-1)
