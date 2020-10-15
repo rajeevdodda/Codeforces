@@ -1,40 +1,21 @@
 # https://codeforces.com/contest/433/problem/B
 
+n = int(input())
 
-def single_integer():
-    return int(input())
+question1 = list(map(int, input().split()))
 
-
-def multi_integer():
-    return map(int, input().split())
+question2 = sorted(question1)
 
 
-def string():
-    return input()
+for i in range(1, n):
+    question1[i] += question1[i - 1]
+    question2[i] += question2[i - 1]
+question2 = [0] + question2
+question1 = [0] + question1
 
-
-def multi_string():
-    return input().split()
-
-
-n = single_integer()
-integers = [0] + list(multi_integer())
-
-sorted_integers = sorted(integers)
-ans = 0
-for i in range(n + 1):
-    ans += sorted_integers[i]
-    sorted_integers[i] = ans
-ans = 0
-for i in range(n + 1):
-    ans += integers[i]
-    integers[i] = ans
-
-m = single_integer()
-
-for i in range(m):
-    t, l, r = multi_integer()
+for i in range(int(input())):
+    t, l, r = map(int, input().split())
     if t == 2:
-        print(sorted_integers[r] - sorted_integers[l - 1])
+        print(question2[r] - question2[l - 1])
     else:
-        print(integers[r] - integers[l - 1])
+        print(question1[r] - question1[l - 1])
